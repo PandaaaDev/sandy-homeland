@@ -1,0 +1,20 @@
+Company Name:
+Sandy Homeland
+Company Description:
+We are a fashion company that sells plus-sized everyday clothing. 
+Our items are made with low-cost materials and are shipped directly to your home. 
+Our target audience is teens. We want to convey a sense of innocence, while at the same time being gentle.
+Job Description:
+You must create a website that will mainly provide information. 
+The goal is to make a landing page that maximizes conversions. 
+Besides the landing page, the website will need a about page, shop page and a privacy policy page. 
+The landing page should have a Our Values ​​section. 
+There should be a call to action to get users to call for more information. 
+They would prefer a monochromatic design, and would like you to use the brand color, which is yellow. 
+Take into account the client's preferences and values.
+Deadline:
+2 days
+masz menelu
+Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
