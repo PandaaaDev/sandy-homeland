@@ -15,18 +15,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .nav {
   position: fixed;
   display: -webkit-box;
@@ -52,6 +40,10 @@ body {
   width: 100%;
   position: fixed;
   padding: 10px 7%;
+}
+
+.nav .wrapper .nav-logo {
+  z-index: 1;
 }
 
 .nav .wrapper .nav-logo .nav-logo__text {
@@ -109,7 +101,7 @@ body {
   left: 0;
 }
 
-.nav-burgermenu button {
+.nav .wrapper .nav-burgermenu button {
   background-color: transparent;
   padding: 15px;
   font-size: 2rem;

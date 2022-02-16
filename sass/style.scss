@@ -12,16 +12,11 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 }
-.wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 .nav {
 	position: fixed;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 	.wrapper {
 		background-color: $mColor;
 		display: flex;
@@ -31,6 +26,7 @@ body {
 		position: fixed;
 		padding: 10px 7%;
 		.nav-logo {
+			z-index: 1;
 			.nav-logo__text {
 				font-weight: normal;
 				font-family: 'Pacifico', cursive;
@@ -72,13 +68,13 @@ body {
 		.show {
 			left: 0;
 		}
-	}
-}
-.nav-burgermenu {
-	button {
-		background-color: transparent;
-		padding: 15px;
-		font-size: 2rem;
-		border: none;
+		.nav-burgermenu {
+			button {
+				background-color: transparent;
+				padding: 15px;
+				font-size: 2rem;
+				border: none;
+			}
+		}
 	}
 }
