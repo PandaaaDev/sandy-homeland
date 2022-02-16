@@ -1,0 +1,84 @@
+@import './colors';
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav {
+	position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+	.wrapper {
+		background-color: $mColor;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		position: fixed;
+		padding: 10px 7%;
+		.nav-logo {
+			.nav-logo__text {
+				font-weight: normal;
+				font-family: 'Pacifico', cursive;
+				font-size: 1.8rem;
+				a {
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
+		.nav-menu {
+			position: absolute;
+			top: 0;
+			left: -10000px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100vh;
+			width: 75vw;
+			transition: left 0.5s;
+			list-style-type: none;
+			background-color: $mColor;
+			.nav-menu__item {
+				width: 100%;
+				text-align: center;
+				font-size: 2rem;
+				margin: 10px;
+				padding: 5px;
+				a {
+					display: block;
+					width: 100%;
+					text-decoration: none;
+					color: black;
+				}
+			}
+		}
+
+		.show {
+			left: 0;
+		}
+	}
+}
+.nav-burgermenu {
+	button {
+		background-color: transparent;
+		padding: 15px;
+		font-size: 2rem;
+		border: none;
+	}
+}
