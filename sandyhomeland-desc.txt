@@ -14,7 +14,6 @@ They would prefer a monochromatic design, and would like you to use the brand co
 Take into account the client's preferences and values.
 Deadline:
 2 days
-masz menelu
 Fonts
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pacifico', cursive;

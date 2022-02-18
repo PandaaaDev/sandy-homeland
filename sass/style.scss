@@ -11,6 +11,7 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-color: $sColor;
 }
 .nav {
 	position: fixed;
@@ -88,6 +89,7 @@ body {
 				flex-direction: row;
 
 				.nav-menu__item {
+					width: 150px;
 					text-align: center;
 					font-size: 1.6rem;
 					padding: 5px;
@@ -99,7 +101,7 @@ body {
 						transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 					  }
 					  a:hover {
-						box-shadow: inset 130px 0 0 0 $tColor;
+						box-shadow: inset 150px 0 0 0 $tColor;
 						color: $sColor;
 					  }
 				}

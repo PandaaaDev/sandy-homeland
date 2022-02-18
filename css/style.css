@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #fcf1d1;
 }
 
 .nav {
@@ -119,6 +120,7 @@ body {
             flex-direction: row;
   }
   .nav .wrapper .nav-menu .nav-menu__item {
+    width: 150px;
     text-align: center;
     font-size: 1.6rem;
     padding: 5px;
@@ -127,17 +129,17 @@ body {
   .nav .wrapper .nav-menu .nav-menu__item a {
     border-radius: 25px;
     padding: 2px;
-    -webkit-box-shadow: inset 0 0 0 0 #bda45b;
-            box-shadow: inset 0 0 0 0 #bda45b;
+    -webkit-box-shadow: inset 0 0 0 0 #a79150;
+            box-shadow: inset 0 0 0 0 #a79150;
     -webkit-transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
     transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   }
   .nav .wrapper .nav-menu .nav-menu__item a:hover {
-    -webkit-box-shadow: inset 130px 0 0 0 #bda45b;
-            box-shadow: inset 130px 0 0 0 #bda45b;
-    color: #f2e5bd;
+    -webkit-box-shadow: inset 150px 0 0 0 #a79150;
+            box-shadow: inset 150px 0 0 0 #a79150;
+    color: #fcf1d1;
   }
   .nav .nav-burgermenu {
     display: none;
