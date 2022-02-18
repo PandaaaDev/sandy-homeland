@@ -30,7 +30,7 @@ body {
 			.nav-logo__text {
 				font-weight: normal;
 				font-family: 'Pacifico', cursive;
-				font-size: 1.8rem;
+				font-size: 2rem;
 				a {
 					color: black;
 					text-decoration: none;
@@ -75,6 +75,32 @@ body {
 				font-size: 2rem;
 				border: none;
 			}
+		}
+	}
+}
+@media (min-width: 1000px) {
+	.nav {
+		.wrapper {
+			.nav-menu {
+				position: static;
+				height: 100%;
+				width: 50%;
+				flex-direction: row;
+
+				.nav-menu__item {
+					width: 100%;
+					text-align: center;
+					font-size: 1.6rem;
+					padding: 5px;
+					cursor: pointer;
+				}
+				.nav-menu__item:hover{
+					font-weight: bold;
+				}
+			}
+		}
+		.nav-burgermenu {
+			display: none;
 		}
 	}
 }
