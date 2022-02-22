@@ -72,10 +72,9 @@ a:hover {
 }
 .values {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	width: 100%;
 	max-width: 961px;
-	background-color: $sColor;
 	text-align: center;
 	.value {
 		display: flex;
@@ -85,7 +84,7 @@ a:hover {
 		flex-direction: column;
 		.value-card {
 			position: relative;
-			height: 50vh;
+			height: 70vh;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -93,6 +92,7 @@ a:hover {
 			border-radius: 25px;
 			overflow: hidden;
 			box-shadow: 2px 2px 2px $mColor;
+			margin: 20vh 0;
 		}
 		.value-card__img {
 			width: 100%;
@@ -106,8 +106,10 @@ a:hover {
 			align-items: center;
 			justify-content: center;
 			overflow: hidden;
+			transition: background-color 0.4s;
 			.value-card__title {
 				position: absolute;
+				font-family: 'Pacifico', cursive;
 				top: 0;
 				width: 100%;
 				padding: 25px;
@@ -117,10 +119,12 @@ a:hover {
 				position: absolute;
 				visibility: hidden;
 				padding: 10%;
+				font-size: 1.5rem;
 			}
 			.value-card__button {
 				position: absolute;
 				bottom: 10px;
+				transition: color 0.4s border 0.4s;
 			}
 		}
 		.value-card__content:hover {
@@ -128,9 +132,18 @@ a:hover {
 			.value-card__text {
 				visibility: visible;
 			}
+			.value-card__button {
+				color: black;
+				border: 2px solid black;
+			}
+			.value-card__button:hover {
+				color: $mColor;
+				border: 2px solid $mColor;
+			}
 		}
 	}
-}
-.values:nth-child(2n + 1) {
-	justify-content: flex-start;
+	.value:first-child {
+		margin-top: 30vh;
+	}
+	.value .value-card{}
 }

@@ -101,12 +101,11 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   max-width: 961px;
-  background-color: #fdedba;
   text-align: center;
 }
 
@@ -129,7 +128,7 @@ a:hover {
 
 .values .value .value-card {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +143,7 @@ a:hover {
   overflow: hidden;
   -webkit-box-shadow: 2px 2px 2px #f0d274;
           box-shadow: 2px 2px 2px #f0d274;
+  margin: 20vh 0;
 }
 
 .values .value .value-card__img {
@@ -165,10 +165,13 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
 }
 
 .values .value .value-card__content .value-card__title {
   position: absolute;
+  font-family: 'Pacifico', cursive;
   top: 0;
   width: 100%;
   padding: 25px;
@@ -179,11 +182,14 @@ a:hover {
   position: absolute;
   visibility: hidden;
   padding: 10%;
+  font-size: 1.5rem;
 }
 
 .values .value .value-card__content .value-card__button {
   position: absolute;
   bottom: 10px;
+  -webkit-transition: color 0.4s border 0.4s;
+  transition: color 0.4s border 0.4s;
 }
 
 .values .value .value-card__content:hover {
@@ -194,9 +200,17 @@ a:hover {
   visibility: visible;
 }
 
-.values:nth-child(2n + 1) {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.values .value .value-card__content:hover .value-card__button {
+  color: black;
+  border: 2px solid black;
+}
+
+.values .value .value-card__content:hover .value-card__button:hover {
+  color: #f0d274;
+  border: 2px solid #f0d274;
+}
+
+.values .value:first-child {
+  margin-top: 30vh;
 }
 /*# sourceMappingURL=landingpage.css.map */
