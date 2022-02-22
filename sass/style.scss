@@ -98,12 +98,12 @@ body {
 						border-radius: 25px;
 						padding: 2px;
 						box-shadow: inset 0 0 0 0 $tColor;
-						transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-					  }
-					  a:hover {
+						transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+					}
+					a:hover {
 						box-shadow: inset 150px 0 0 0 $tColor;
 						color: $sColor;
-					  }
+					}
 				}
 			}
 		}
