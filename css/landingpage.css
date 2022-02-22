@@ -1,0 +1,202 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../img/SH1.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  padding: 10px;
+  border: 2px solid #fdedba;
+  border-radius: 25px;
+  color: #fdedba;
+  background-color: transparent;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s border 0.3s;
+  transition: color 0.3s border 0.3s;
+}
+
+a:hover {
+  color: #f0d274;
+  border: 2px solid #f0d274;
+}
+
+.landingpage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  font-size: 0;
+}
+
+.landingpage .landingpage-text {
+  font-family: 'Pacifico', cursive;
+}
+
+.landingpage-img img {
+  width: 100%;
+  height: 100vh;
+}
+
+.landingpage-content {
+  position: absolute;
+}
+
+.landingpage-text {
+  font-size: 4rem;
+  color: #fdedba;
+}
+
+.landingpage-buttons {
+  margin: 25px;
+}
+
+.landingpage-buttons a {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #fdedba;
+  color: #fdedba;
+}
+
+.landingpage-buttons a:hover {
+  color: #f0d274;
+  border: 2px solid #f0d274;
+}
+
+.values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 961px;
+  background-color: #fdedba;
+  text-align: center;
+}
+
+.values .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.values .value .value-card {
+  position: relative;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 2px #f0d274;
+          box-shadow: 2px 2px 2px #f0d274;
+}
+
+.values .value .value-card__img {
+  width: 100%;
+  height: 100%;
+}
+
+.values .value .value-card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.values .value .value-card__content .value-card__title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: #f0d274;
+}
+
+.values .value .value-card__content .value-card__text {
+  position: absolute;
+  visibility: hidden;
+  padding: 10%;
+}
+
+.values .value .value-card__content .value-card__button {
+  position: absolute;
+  bottom: 10px;
+}
+
+.values .value .value-card__content:hover {
+  background-color: rgba(253, 237, 186, 0.4);
+}
+
+.values .value .value-card__content:hover .value-card__text {
+  visibility: visible;
+}
+
+.values:nth-child(2n + 1) {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/*# sourceMappingURL=landingpage.css.map */
