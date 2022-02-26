@@ -13,5 +13,135 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-image: '../img/SH1.png';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
+  padding: 12px;
+  color: #f0d274;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #f0d274;
+  border-radius: 25px;
+}
+
+.landingpage {
+  width: 100%;
+}
+
+.landingpage-header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landingpage-header .header-img {
+  position: absolute;
+  background-image: url("../img/kolaz-sandyhomelandv2.png");
+  width: 100%;
+  height: 100%;
+}
+
+.landingpage-header .header-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f0d274;
+  font-family: 'Pacifico', cursive;
+}
+
+.landingpage-header .header-content .header-text {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.landingpage-header .header-content .header__buttons {
+  margin: 50px 0;
+  font-size: 1.5rem;
+}
+
+.values .value {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding: 5%;
+  background-image: url("../img/landingpage-sandyhomeland.png");
+}
+
+.values .value .value-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 7%;
+  background-color: rgba(253, 237, 186, 0.3);
+}
+
+.values .value .value-content .value-title {
+  margin: 10px 0;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.values .value .value-content .value-text {
+  font-size: 1.6rem;
+}
+
+.values .value .value-content .value-button {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=landingpage.css.map */
