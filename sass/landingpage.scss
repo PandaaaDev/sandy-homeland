@@ -18,7 +18,6 @@ body {
 }
 .button {
 	padding: 12px;
-	// margin: 0 15px;
 	color: $mColor;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -37,7 +36,7 @@ body {
 	align-items: center;
 	.header-img {
 		position: absolute;
-		background-image: url('../img/kolaz-sandyhomelandv2.png');
+		background-image: url('../img/landingpage-mobile.png');
 		width: 100%;
 		height: 100%;
 	}
@@ -49,14 +48,20 @@ body {
 		flex-direction: column;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: rgba(0, 0, 0, 0.6);
 		color: $mColor;
+		font-family: 'Pacifico', cursive;
 		.header-text {
 			font-size: 3rem;
 			text-align: center;
+			h1 {
+				font-weight: normal;
+			}
 		}
-		font-family: 'Pacifico', cursive;
 		.header__buttons {
+			.button {
+				font-family: 'Open Sans', sans-serif;
+			}
 			margin: 50px 0;
 			font-size: 1.5rem;
 		}
@@ -71,7 +76,6 @@ body {
 		flex-direction: column;
 		height: 100vh;
 		padding: 5%;
-		background-image: url('../img/landingpage-sandyhomeland.png');
 		.value-content {
 			position: absolute;
 			display: flex;
@@ -81,18 +85,76 @@ body {
 			width: 100%;
 			height: 100%;
 			padding: 7%;
-			background-color: rgba(253, 237, 186, 0.3);
+			background-color: rgba(253, 237, 186, 0.7);
 			.value-title {
 				margin: 10px 0;
 				font-size: 3rem;
+				font-weight: normal;
 				font-family: 'Pacifico', cursive;
 			}
 			.value-text {
 				font-size: 1.6rem;
 			}
-			.value-button{
+			.value-button {
 				margin-top: 30px;
+				.button {
+					border: 2px solid black;
+					color: black;
+				}
 			}
 		}
+	}
+}
+.low-cost-materials {
+	background-image: url('../img/lowcostmaterials.png');
+}
+.direct-shipment {
+	background-image: url('../img/direct-shipment.png');
+}
+.sense-of-innocence {
+	background-image: url('../img/kolaz-sandyhomeland.png');
+}
+@media (min-width: 414px) {
+	.landingpage-header {
+		.header-img {
+			background-image: url('../img/kolaz-sandyhomeland.png');
+		}
+		.header-content {
+			.header-text{
+				h1{
+					font-size: 7rem;
+				}
+			}
+			.header__buttons{
+				.button{
+					font-size: 2rem;
+					margin: 15px;
+				}
+			}
+		}
+	}
+	.values {
+		.value {
+			.value-content{
+				.value-title{
+					font-size: 5rem;
+				}
+				.value-text{
+					font-size: 1.8rem;
+				}
+				.value-button{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.low-cost-materials {
+		background-image: url('../img/lowcostmaterials.png');
+	}
+	.direct-shipment {
+		background-image: url('../img/direct-shipment.png');
+	}
+	.sense-of-innocence {
+		background-image: url('../img/kolaz-sandyhomelandv2.png');
 	}
 }
