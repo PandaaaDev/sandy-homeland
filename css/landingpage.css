@@ -27,10 +27,10 @@ body {
 
 .button {
   padding: 12px;
-  color: #f0d274;
+  color: #ffde7a;
   text-decoration: none;
   text-transform: uppercase;
-  border: 2px solid #f0d274;
+  border: 2px solid #ffde7a;
   border-radius: 25px;
 }
 
@@ -78,7 +78,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #f0d274;
+  color: #ffde7a;
   font-family: 'Pacifico', cursive;
 }
 
@@ -170,7 +170,7 @@ body {
   background-image: url("../img/kolaz-sandyhomeland.png");
 }
 
-@media (min-width: 414px) {
+@media (min-width: 426px) {
   .landingpage-header .header-img {
     background-image: url("../img/kolaz-sandyhomeland.png");
   }
