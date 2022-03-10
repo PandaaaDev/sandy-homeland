@@ -11,18 +11,22 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1.4rem;
 }
 .nav {
 	position: fixed;
 	display: flex;
 	justify-content: center;
+	height: 80px;
 	width: 100%;
+	z-index: 10;
 	.wrapper {
 		background-color: $sColor;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
+		height: 80px;
 		position: fixed;
 		padding: 10px 7%;
 		.nav-logo {
@@ -78,6 +82,15 @@ body {
 		}
 	}
 }
+.button {
+	padding: 12px;
+	color: $mColor;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 2px solid $mColor;
+	border-radius: 25px;
+}
+
 @media (min-width: 1000px) {
 	.nav {
 		.wrapper {
