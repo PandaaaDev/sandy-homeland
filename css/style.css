@@ -30,7 +30,7 @@ body {
 }
 
 .nav .wrapper {
-  background-color: #fff3cb;
+  background-color: #ffde7a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +83,7 @@ body {
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
   list-style-type: none;
-  background-color: #fff3cb;
+  background-color: inherit;
 }
 
 .nav .wrapper .nav-menu .nav-menu__item {

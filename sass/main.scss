@@ -1,9 +1,83 @@
 @import './colors';
-.header {
+.section-title {
+	font-weight: normal;
+	font-family: 'Pacifico', cursive;
+	margin: 25px 0;
+}
+.values-title,
+.bestsellers-title,
+.specialoffert-title {
 	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.values-title::before,
+.bestsellers-title::before,
+.specialoffert-title::before,
+.values-title::after,
+.bestsellers-title::after,
+.specialoffert-title::after {
+	content: ' ';
+	position: absolute;
+	display: block;
+	top: 50%;
+	// transform: translate(-50%, -50%);
+	width: 20%;
+	height: 2px;
+	background-color: $mColor;
+}
+.values-title::before,
+.bestsellers-title::before,
+.specialoffert-title::before {
+	left: 0;
+}
+.values-title::after,
+.bestsellers-title::after,
+.specialoffert-title::after {
+	right: 0;
+}
+.container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	max-width: 1300px;
+}
+.wave {
+	background-image: url(../img/layered-waves-haikei-mobile.svg);
+	width: 100%;
+	height: 200px;
+}
+.rotated-wave {
+	transform: rotate(180deg);
+}
+.desktop-video {
+	display: none;
+}
+.mobile-video {
+	width: 100vw;
+	height: 100%;
+}
+.display-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.aboutus,
+.values,
+.ourbestsellers,
+.specialoffert {
+	flex-direction: column;
+}
+.values,
+.ourbestsellers,
+.specialoffert {
+	margin: 25px 0;
+}
+.button {
+	cursor: pointer;
+}
+.header {
+	position: relative;
 	overflow: hidden;
 	max-height: 100vh;
 	.color-box {
@@ -15,14 +89,8 @@
 		width: 100vw;
 		height: 100vh;
 		top: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: rgba(255, 222, 122, 0.4);
+		background-color: rgba(255, 222, 122, 0.2);
 		.text {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			flex-direction: column;
 			font-family: 'Pacifico', cursive;
 			font-size: 2rem;
@@ -30,7 +98,8 @@
 				font-weight: normal;
 			}
 			.arrow-container {
-				padding-top: 30vh;
+				position: absolute;
+				bottom: 30px;
 			}
 			a {
 				display: block;
@@ -42,21 +111,104 @@
 			}
 		}
 	}
-
-	.desktop-video {
-		display: none;
+}
+.aboutus {
+	text-align: justify;
+	.container {
+		padding: 0 7%;
 	}
-	.mobile-video {
-		width: 100vw;
+}
+.value-cards {
+	max-width: 1300px;
+	flex-wrap: wrap;
+	.value-card {
+		position: relative;
+		flex-direction: column;
+		width: 300px;
+		height: 300px;
+		text-align: justify;
+		margin: 10px 15px;
+		border-radius: 50%;
+		box-shadow: 0px 0px 20px $mColor;
+		background-color: $sColor;
+		padding: 25px;
+		.value-card-item {
+			margin: 5px;
+		}
+		.value-card-img {
+			font-size: 3.5rem;
+		}
+		.value-card__button {
+			margin-top: 10px;
+			color: black;
+			border: 2px solid black;
+		}
+	}
+}
+.ourbestsellers-items,
+.specialoffert-items {
+	flex-wrap: wrap;
+}
+.shop-item {
+	position: relative;
+	flex-direction: column;
+	height: 450px;
+	width: 300px;
+	border: 2px solid $mColor;
+	border-radius: 50px;
+	margin: 15px;
+	overflow: hidden;
+	.shop-item-text {
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		color: $mColor;
+		background-color: rgba(0, 0, 0, 0.4);
+		text-align: center;
+		font-size: 1.6rem;
+		.shop-item-title {
+			font-weight: normal;
+			font-family: 'Pacifico', cursive;
+		}
+		.button {
+			display: inline-block;
+			font-size: 1.6rem;
+		}
+		.shop-item-title,
+		.shop-item-price,
+		.button {
+			margin: 5px;
+		}
+	}
+	img {
+		width: 100%;
 		height: 100%;
 	}
 }
+
 .footer {
 	background-color: $mColor;
-	.footer-wave {
-		background-image: url(../img/layered-waves-haikei-mobile.svg);
-		width: 100%;
-		height: 200px;
+	.footer-menu {
+		flex-wrap: wrap;
+		max-width: 1300px;
+		list-style: none;
+		margin: 20px;
+		li {
+			margin: 20px;
+			a {
+				padding: 15px;
+				text-decoration: none;
+				color: black;
+				cursor: pointer;
+				border-radius: 25px;
+				box-shadow: inset 0 0 0 0 $tColor;
+				transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+			}
+			a:hover {
+				box-shadow: inset 150px 0 0 0 $tColor;
+				color: $sColor;
+			}
+		}
 	}
 }
 @media (min-width: 1300px) {
@@ -68,11 +220,25 @@
 			display: none;
 		}
 	}
+	.values-title::before,
+	.bestsellers-title::before,
+	.specialoffert-title::before,
+	.values-title::after,
+	.bestsellers-title::after,
+	.specialoffert-title::after {
+		width: 40%;
+	}
 }
-@media(min-width: 960px){
-    .footer{
-        .footer-wave{
-            background-image: url(../img/layered-waves-haikei-desktop.svg);
-        }
-    }
+@media (min-width: 960px) {
+	.wave {
+		background-image: url(../img/layered-waves-haikei-desktop.svg);
+	}
+	.values-title::before,
+	.bestsellers-title::before,
+	.specialoffert-title::before,
+	.values-title::after,
+	.bestsellers-title::after,
+	.specialoffert-title::after {
+		width: 35%;
+	}
 }

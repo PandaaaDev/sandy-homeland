@@ -21,7 +21,7 @@ body {
 	width: 100%;
 	z-index: 10;
 	.wrapper {
-		background-color: $sColor;
+		background-color: $mColor;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -53,7 +53,7 @@ body {
 			width: 75vw;
 			transition: left 0.3s;
 			list-style-type: none;
-			background-color: $sColor;
+			background-color: inherit;
 			.nav-menu__item {
 				width: 100%;
 				text-align: center;

@@ -1,5 +1,45 @@
-.header {
+.section-title {
+  font-weight: normal;
+  font-family: 'Pacifico', cursive;
+  margin: 25px 0;
+}
+
+.values-title,
+.bestsellers-title,
+.specialoffert-title {
   position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.values-title::before,
+.bestsellers-title::before,
+.specialoffert-title::before,
+.values-title::after,
+.bestsellers-title::after,
+.specialoffert-title::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 20%;
+  height: 2px;
+  background-color: #ffde7a;
+}
+
+.values-title::before,
+.bestsellers-title::before,
+.specialoffert-title::before {
+  left: 0;
+}
+
+.values-title::after,
+.bestsellers-title::after,
+.specialoffert-title::after {
+  right: 0;
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +49,63 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1300px;
+}
+
+.wave {
+  background-image: url(../img/layered-waves-haikei-mobile.svg);
+  width: 100%;
+  height: 200px;
+}
+
+.rotated-wave {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.desktop-video {
+  display: none;
+}
+
+.mobile-video {
+  width: 100vw;
+  height: 100%;
+}
+
+.display-flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutus,
+.values,
+.ourbestsellers,
+.specialoffert {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.values,
+.ourbestsellers,
+.specialoffert {
+  margin: 25px 0;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
   overflow: hidden;
   max-height: 100vh;
 }
@@ -23,28 +120,10 @@
   width: 100vw;
   height: 100vh;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: rgba(255, 222, 122, 0.4);
+  background-color: rgba(255, 222, 122, 0.2);
 }
 
 .header .background .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -58,7 +137,8 @@
 }
 
 .header .background .text .arrow-container {
-  padding-top: 30vh;
+  position: absolute;
+  bottom: 30px;
 }
 
 .header .background .text a {
@@ -70,12 +150,99 @@
   color: black;
 }
 
-.header .desktop-video {
-  display: none;
+.aboutus {
+  text-align: justify;
 }
 
-.header .mobile-video {
-  width: 100vw;
+.aboutus .container {
+  padding: 0 7%;
+}
+
+.value-cards {
+  max-width: 1300px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.value-cards .value-card {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+  height: 300px;
+  text-align: justify;
+  margin: 10px 15px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px #ffde7a;
+          box-shadow: 0px 0px 20px #ffde7a;
+  background-color: #fff3cb;
+  padding: 25px;
+}
+
+.value-cards .value-card .value-card-item {
+  margin: 5px;
+}
+
+.value-cards .value-card .value-card-img {
+  font-size: 3.5rem;
+}
+
+.value-cards .value-card .value-card__button {
+  margin-top: 10px;
+  color: black;
+  border: 2px solid black;
+}
+
+.ourbestsellers-items,
+.specialoffert-items {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shop-item {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 450px;
+  width: 300px;
+  border: 2px solid #ffde7a;
+  border-radius: 50px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.shop-item .shop-item-text {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: #ffde7a;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.shop-item .shop-item-text .shop-item-title {
+  font-weight: normal;
+  font-family: 'Pacifico', cursive;
+}
+
+.shop-item .shop-item-text .button {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+.shop-item .shop-item-text .shop-item-title,
+.shop-item .shop-item-text .shop-item-price,
+.shop-item .shop-item-text .button {
+  margin: 5px;
+}
+
+.shop-item img {
+  width: 100%;
   height: 100%;
 }
 
@@ -83,10 +250,36 @@
   background-color: #ffde7a;
 }
 
-.footer .footer-wave {
-  background-image: url(../img/layered-waves-haikei-mobile.svg);
-  width: 100%;
-  height: 200px;
+.footer .footer-menu {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1300px;
+  list-style: none;
+  margin: 20px;
+}
+
+.footer .footer-menu li {
+  margin: 20px;
+}
+
+.footer .footer-menu li a {
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0 0 0 0 #bba259;
+          box-shadow: inset 0 0 0 0 #bba259;
+  -webkit-transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.footer .footer-menu li a:hover {
+  -webkit-box-shadow: inset 150px 0 0 0 #bba259;
+          box-shadow: inset 150px 0 0 0 #bba259;
+  color: #fff3cb;
 }
 
 @media (min-width: 1300px) {
@@ -96,11 +289,27 @@
   .header .mobile-video {
     display: none;
   }
+  .values-title::before,
+  .bestsellers-title::before,
+  .specialoffert-title::before,
+  .values-title::after,
+  .bestsellers-title::after,
+  .specialoffert-title::after {
+    width: 40%;
+  }
 }
 
 @media (min-width: 960px) {
-  .footer .footer-wave {
+  .wave {
     background-image: url(../img/layered-waves-haikei-desktop.svg);
+  }
+  .values-title::before,
+  .bestsellers-title::before,
+  .specialoffert-title::before,
+  .values-title::after,
+  .bestsellers-title::after,
+  .specialoffert-title::after {
+    width: 35%;
   }
 }
 /*# sourceMappingURL=main.css.map */
